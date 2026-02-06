@@ -1,0 +1,104 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    transition: color .3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5e29d814e4ed2f69fce08080/db40304e-d172-40e4-9556-58ff30812cc6/12.jpg?format=2500w);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: ellipse(150% 100% at 50% 0%);
+    margin-top: 80px;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 150px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    padding: 10px 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 60px;
+    }
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 42px;
+    }
+}
